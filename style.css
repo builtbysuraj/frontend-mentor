@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Outfit", sans-serif;
+  background: #f2ebe3;
+  margin: 1rem;
+}
