@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+:root {
+  --white: #ffffff;
+  --light-gray: #cfcfcf;
+  --light-grayish-blue: #ecf2f8;
+  --very-dark-grayish-blue: #48556a;
+  --moderate-violet: #7541c8;
+  --very-dark-blackish-blue: #19212e;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: var(--light-grayish-blue);
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  font-size: 1.3rem;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+.container {
+  display: grid;
+  gap: 2.2rem;
+  min-height: 30rem;
+  max-width: 70%;
+  margin: auto;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-col-span-2 {
+  grid-column: span 2;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h1,
+p {
+  padding: 0.5rem 1rem;
+}
+
+.user-area {
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  margin: 1rem;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1.3;
+}
+
+.username {
+  color: var(--white);
+}
+.verify {
+  opacity: 0.5;
+}
+
+.testimonials-1,
+.testimonials-2,
+.testimonials-3,
+.testimonials-4,
+.testimonials-5 {
+  border-radius: 8px;
+  padding: 2rem;
+}
+.testimonials-1 {
+  background-color: var(--moderate-violet);
+  color: var(--light-gray);
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 10%;
+}
+
+.testimonials-1 h1 {
+  color: var(--white);
+}
+
+.testimonials-2 {
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--light-gray);
+}
+
+.testimonials-2 h1 {
+  color: var(--white);
+}
+
+.testimonials-3 {
+  background-color: var(--white);
+}
+
+.testimonials-3 .username {
+  color: var(--very-dark-blackish-blue);
+}
+
+.testimonials-3 p {
+  opacity: 0.7;
+}
+.testimonials-4 {
+  background-color: var(--very-dark-blackish-blue);
+  color: var(--light-gray);
+}
+
+.testimonials-4 h1 {
+  color: var(--white);
+}
+
+.testimonials-5 {
+  background-color: var(--white);
+  grid-column-start: 4;
+  grid-row: 1 / span 2; /* or 3  */
+}
+
+.testimonials-5 .username {
+  color: var(--very-dark-blackish-blue);
+}
+
+.testimonials-5 p {
+  opacity: 0.7;
+}
